@@ -1,0 +1,42 @@
+{
+  "name": "trending-news-dashboard",
+  "version": "0.0.0",
+  "scripts": {
+    "start:dev": "node ./bin/www",
+    "start": "echo 'This is the production server!' && echo && echo 'For testing: $ npm run start:dev' && echo && NODE_ENV=production node ./bin/www",
+    "test-api": "jest",
+    "package-npm-for-browser": "npx snowpack install && rm web_modules/fetch-mock-jest.js ; mv web_modules public/javascripts",
+    "build": "npm run package-npm-for-browser && babel public -d public-es5",
+    "test": "npm run jest-suite && npm run cypress-suite && npm run cypress:open",
+    "cypress:open": "cypress open",
+    "jest-suite": "./node_modules/.bin/jest public-es5/javascripts/index.test.js",
+    "cypress-suite": "npx cypress run -s cypress/integration/news_dashboard.spec.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "search-text-tokenizer": "2.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@primer/css": "^14.4.0",
+    "@types/jest": "^25.2.3",
+    "babel-jest": "^26.0.1",
+    "cypress": "^4.7.0",
+    "fetch-mock": "^9.10.1",
+    "fetch-mock-jest": "^1.3.0",
+    "jest": "25.4.0",
+    "node-fetch": "^2.6.0",
+    "snowpack": "^2.2.4",
+    "stylelint": "^13.6.0",
+    "stylelint-config-primer": "^9.0.0"
+  },
+  "author": {
+    "name": "Riyad Shauk"
+  },
+  "license": "MIT",
+  "homepage": "https://riyadshauk.com/news"
+}
