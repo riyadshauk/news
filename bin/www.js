@@ -9,15 +9,12 @@ const process = require('process');
 const http = (process.env.NODE_ENV || '').toLowerCase().indexOf('prod') !== 0 ?
   require('http') : require('https');
 const app = require('../app-server');
-const { prod, test } = require('../public-es5/javascripts/config');
-
-const configPort = (process.env.NODE_ENV || '').toLowerCase().indexOf('prod') !== 0 ?
-  test.port : prod.port;
+const config = require('../public-es5/javascripts/config');
 
 /**
  * Get port from environment (if applicable) and store in Express.
  */
-const port = normalizePort(process.env.PORT || configPort);
+const port = normalizePort(process.env.PORT || config.port);
 app.set('port', port);
 
 /**
@@ -87,5 +84,5 @@ function onError(error) {
  */
 
 function onListening() {
-  console.log(`Application-server listening on port ${port}!\n\nPlease navigate to http://localhost:${port} to view this website in your favorite browser.`);
+  console.log(`Application-server listening on port ${port}!\n\nPlease navigate to ${config.apiURL} to view this website in your favorite browser.`);
 }

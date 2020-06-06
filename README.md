@@ -37,7 +37,7 @@ npm run build
 3. Run the backend.
 
 ```bash
-npm run start:dev
+npm run start
 ```
 
 4. Run the Jest and Cypress tests.
@@ -46,10 +46,12 @@ npm run start:dev
 npm test
 ```
 
-5. Open up `http://localhost:3033` in your browser to use the Trending News SPA.
+Note: If the tests fail, ensure `const testEnv = true;` is appropriately set in `public/javascripts/config.js`.
+
+5. Open up `http://0.0.0.0:3033` in your browser to use the Trending News SPA.
 
 ```bash
-open http://localhost:3033
+open http://0.0.0.0:3033
 ```
 
 ## Features
@@ -62,3 +64,30 @@ open http://localhost:3033
 - End-to-end testing via Cypress
 - localStorage API to Favorite/Un-favorite articles
 - CSS styling so that it looks like a professional webpage
+
+## Deploy Instructions
+
+### Step 1: Update public/javascripts/config.js
+
+You will need to change `const testEnv = false;` to `const testEnv = true;` in `public/javascripts/config.js`, and update your public URL from `const publicApiURL = 'https://riyadshauk.com/news';` to whatever your public URL is that is accessible from the statically served files in any browser.
+
+### Step 2: Serve the website from your webserver of choice
+
+#### Heroku, other PaaS
+
+It should just work, as usual.
+
+#### NGINX
+
+The following example location block will work, assuming your Nginx user has read access to your static files. If your `publicApiURL` is, for example, `https://riyadshauk.com/news`, then the webpage should work, ceteris paribus (assuming the rest of your nginx file and system is configured correctly – for https, etc).
+
+```nginx
+location /news {
+  alias /var/www/news/public;
+  location /news/api {
+    proxy_pass http://127.0.0.1:3033/api;
+  }
+  try_files $uri $uri/ =404;
+}
+```
+

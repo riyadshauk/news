@@ -1,15 +1,9 @@
-export const test = {
-  port: '3033',
-  apiURL: 'http://127.0.0.1:3033'
-}
-export const prod = {
-  port: '443',
-  apiURL: 'https://riyadshauk.com/news'
-};
+export const port = '3033';
+export const apiURL = 'http://0.0.0.0:3033';
+
+const testEnv = true; // toggle this for deploying
+const publicApiURL = 'https://riyadshauk.com/news'; // or whatever the public URL / IP address is that is accessible from browsers, on the same origin that the website is being hosted from
 /**
  * @param {string} countryCode 
- * 
- * @todo default this to use prod.apiURL, then stub out
- * (programmatically overwrite) this to test.apiURL inside of tests.
  */
-export const apiURLBuilder = (countryCode = 'US') => `${test.apiURL}/api?country=${countryCode}`;
+export const apiURLBuilder = (countryCode = 'US') => `${testEnv ? apiURL : publicApiURL}/api?country=${countryCode}`;
