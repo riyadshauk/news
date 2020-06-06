@@ -126,7 +126,7 @@ export default {
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
   setupFiles: [
-    './public-es5/mocks/client.js',
+    //'./public-es5/mocks/client.js',
   ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test

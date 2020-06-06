@@ -1,6 +1,6 @@
 export const test = {
   port: '3033',
-  apiURL: 'http://localhost:3033'
+  apiURL: 'http://127.0.0.1:3033'
 }
 export const prod = {
   port: '443',
