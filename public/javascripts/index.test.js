@@ -1,3 +1,5 @@
+/* eslint-disable prefer-template */
+/* eslint-disable no-undef */
 import { retrieveTopHeadlines } from './index.js';
 import fetch from '../mocks/isomorphic-fetch.js';
 import localStorageMock from '../mocks/localStorage';
@@ -12,7 +14,9 @@ const countryWithData = 'US';
 const countryWithoutData = 'AF';
 
 const runTestCases = (countryCode, messagePrefix) => {
-  const articlesFromAPI = countryCode === countryWithData ? freshArticles : vacuousArticles;
+  const articlesFromAPI = (
+    countryCode === countryWithData ? freshArticles : vacuousArticles
+  );
   test(messagePrefix + 'without cache', async () => {
     Object.defineProperty(global, 'fetch', {
       value: nextStubbedFetch(articlesFromAPI, countryCode),
@@ -69,9 +73,11 @@ describe('retrieveTopHeadlines', () => {
     window.localStorage.removeItem(apiURLBuilder(countryWithoutData));
   });
 
-  describe('Retrieve meaningful articles ([1, 2, 3])', () =>
-    runTestCases(countryWithData, 'Retrieve meaningful articles ([1, 2, 3]) '));
+  describe('Retrieve meaningful articles ([1, 2, 3])', () => {
+    runTestCases(countryWithData, 'Retrieve meaningful articles ([1, 2, 3]) ');
+  });
 
-  describe('Retrieve vacuous articles ([])', () =>
-    runTestCases(countryWithoutData, 'Retrieve vacuous articles ([]) '));
+  describe('Retrieve vacuous articles ([])', () => {
+    runTestCases(countryWithoutData, 'Retrieve vacuous articles ([]) ');
+  });
 });

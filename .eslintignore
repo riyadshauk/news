@@ -1,0 +1,9 @@
+public/javascripts-web/
+public/javascripts-node/
+public/javascripts/web_modules
+bin/
+routes/
+cypress/
+app-server.js
+
+public/javascripts/store.js

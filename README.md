@@ -46,13 +46,15 @@ npm run start
 npm test
 ```
 
-Note: If the tests fail, ensure `const testEnv = true;` is appropriately set in `public/javascripts/config.js`.
+Note: If the tests fail, ensure `const testEnv = true;` is appropriately set in `public/javascripts/config.js`, then rebuild and restart the backend (steps 2 and 3, before continuing with this step).
 
 5. Open up `http://0.0.0.0:3033` in your browser to use the Trending News SPA.
 
 ```bash
 open http://0.0.0.0:3033
 ```
+
+Note: If the you notice that the API calls are incorrect, ensure `const testEnv = false;` is appropriately set in `public/javascripts/config.js`, then rebuild and restart the backend (steps 2 and 3, before continuing with this step).
 
 ## Features
 
@@ -64,6 +66,8 @@ open http://0.0.0.0:3033
 - End-to-end testing via Cypress
 - localStorage API to Favorite/Un-favorite articles
 - CSS styling so that it looks like a professional webpage
+- Works on Chrome, Safari, Android, iOS (thanks to Babel for allowing modern/experimental JS with plugins)
+- Error-free linting and tests required pre-commit via Git Hooks
 
 ## Deploy Instructions
 
@@ -75,7 +79,7 @@ You will need to change `const testEnv = false;` to `const testEnv = true;` in `
 
 #### Heroku, other PaaS
 
-It should just work, as usual.
+It should, more or less as usual.
 
 #### NGINX
 
@@ -90,4 +94,3 @@ location /news {
   try_files $uri $uri/ =404;
 }
 ```
-

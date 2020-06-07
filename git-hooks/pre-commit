@@ -1,0 +1,5 @@
+#!/bin/sh
+if [[ -z "${SKIP_LINT}" ]]; then # SKIP_LINT is undefined
+	npm run eslint
+fi
+npm test

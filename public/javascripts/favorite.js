@@ -1,5 +1,3 @@
-import { SVGButton } from './styles.js';
-
 const favoriteArticlesUpdated = new Event('favoriteArticlesUpdated');
 
 const retrieveFavoriteArticlesJSON = () => {
@@ -7,7 +5,9 @@ const retrieveFavoriteArticlesJSON = () => {
   let articles = {};
   try {
     articles = JSON.parse(localStorage.getItem(key));
-  } catch { }
+  } catch {
+    // let articles = {}, articles = {} already take care of this case.
+  }
   if (articles === null) {
     localStorage.setItem(key, JSON.stringify({}));
     articles = {};
@@ -15,36 +15,44 @@ const retrieveFavoriteArticlesJSON = () => {
   return articles;
 };
 
-export const retrieveFavoriteArticles = () => Object.values(retrieveFavoriteArticlesJSON());
+export const retrieveFavoriteArticles = () => (
+  Object.values(retrieveFavoriteArticlesJSON())
+);
 
-const articleHash = article => article.publishedAt + article.title;
+const articleHash = (article) => article.publishedAt + article.title;
 
-const addFavoriteArticle = article => {
+const addFavoriteArticle = (article) => {
   const favoriteArticlesJSON = retrieveFavoriteArticlesJSON();
   favoriteArticlesJSON[articleHash(article)] = article;
   // Note: setting this string in storage every time seems sub-optimal, but at least it avoids potential bugs.
-  localStorage.setItem('favoriteArticlesJSON', JSON.stringify(favoriteArticlesJSON));
+  localStorage
+    .setItem('favoriteArticlesJSON', JSON.stringify(favoriteArticlesJSON));
 };
 
-const removeFavoriteArticle = article => {
+const removeFavoriteArticle = (article) => {
   const favoriteArticlesJSON = retrieveFavoriteArticlesJSON();
   const key = articleHash(article);
   if (favoriteArticlesJSON[key] !== undefined) {
     delete favoriteArticlesJSON[key];
     // Note: setting this string in storage every time seems sub-optimal, but at least it avoids potential bugs.
-    localStorage.setItem('favoriteArticlesJSON', JSON.stringify(favoriteArticlesJSON));
+    localStorage
+      .setItem('favoriteArticlesJSON', JSON.stringify(favoriteArticlesJSON));
   }
 };
 
-export const favoriteArticlesSection = document.getElementById('favorite-articles');
+export const favoriteArticlesSection = (
+  document.getElementById('favorite-articles')
+);
 
 const emitFavoriteArticlesUpdated = () => {
   favoriteArticlesSection.dispatchEvent(favoriteArticlesUpdated);
 };
 
-const notFavorited = article => retrieveFavoriteArticlesJSON()[articleHash(article)] === undefined;
+const notFavorited = (article) => (
+  retrieveFavoriteArticlesJSON()[articleHash(article)] === undefined
+);
 
-export const createFavoriteButton = article => {
+export const createFavoriteButton = (article) => {
   const favoriteButton = document.createElement('button');
   favoriteButton.innerHTML = `
   <button class="btn-octicon" type="button" aria-label="Favorite Button">
@@ -57,7 +65,7 @@ export const createFavoriteButton = article => {
   favoriteButton.value = notFavorited(article) ? 'Favorite' : 'Un-favorite';
   favoriteButton.classList.add('FavoriteButton');
   // favoriteButton.setAttribute('style', "padding: 0; border: none; background: none; fill:blue;")
-  favoriteButton.onclick = e => {
+  favoriteButton.onclick = (e) => {
     e.preventDefault();
     favoriteButton.querySelector('svg').classList.toggle('--favorited');
     if (favoriteButton.value === 'Favorite') {
@@ -70,10 +78,11 @@ export const createFavoriteButton = article => {
      * Also, this line does favoriteButton.textContent initialization based on values from localStorage
      */
     favoriteButton.value = notFavorited(article) ? 'Favorite' : 'Un-favorite';
-    const updateFavButtonTextOnClick = () => {
-      favoriteButton.value === 'Favorite' ? 'Un-favorite' : 'Favorite';
-    }
-    favoriteButton.addEventListener('favoriteArticlesUpdated', updateFavButtonTextOnClick);
+    const updateFavButtonTextOnClick = () => (
+      favoriteButton.value === 'Favorite' ? 'Un-favorite' : 'Favorite'
+    );
+    favoriteButton
+      .addEventListener('favoriteArticlesUpdated', updateFavButtonTextOnClick);
     emitFavoriteArticlesUpdated();
   };
   return favoriteButton;

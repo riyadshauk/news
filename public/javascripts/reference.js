@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export const countryToCountryCode = {
   'United States': 'US',
   Afghanistan: 'AF',
@@ -220,7 +221,7 @@ export const countryToCountryCode = {
   Mozambique: 'MZ',
   'Palestinian Territory, Occupied': 'PS',
   Pitcairn: 'PN',
-  'Réunion': 'RE',
+  Réunion: 'RE',
   Russia: 'RU',
   'Saint Barthélemy': 'BL',
   'Saint Helena, Ascension and Tristan Da Cunha': 'SH',
@@ -239,5 +240,5 @@ export const countryToCountryCode = {
   'Venezuela, Bolivarian Republic of': 'VE',
   'Viet Nam': 'VN',
   'Virgin Islands, British': 'VG',
-  'Virgin Islands, U.S.': 'VI'
+  'Virgin Islands, U.S.': 'VI',
 };

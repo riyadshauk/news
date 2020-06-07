@@ -9,7 +9,7 @@ const process = require('process');
 const http = (process.env.NODE_ENV || '').toLowerCase().indexOf('prod') !== 0 ?
   require('http') : require('https');
 const app = require('../app-server');
-const config = require('../public-es5/javascripts/config');
+const config = require('../public/javascripts-node/javascripts/config');
 
 /**
  * Get port from environment (if applicable) and store in Express.

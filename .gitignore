@@ -1,6 +1,7 @@
 node_modules
-public/javascripts/web_modules
-public-es5
+public/javascripts/web_modules/
+public/javascripts-web/
+public/javascripts-node/
 **/.DS_STORE
 cypress/**/examples
 *.pdf

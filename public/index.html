@@ -2,9 +2,11 @@
 <html>
 
 <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
   <title>News Feed</title>
   <script type="module">
-    import { imgError, filterArticles, toggleSidebar } from './javascripts/index.js';
+    import { imgError, filterArticles, toggleSidebar } from './javascripts-web/javascripts/index.js';
     window.filterArticles = filterArticles;
     window.imgError = imgError;
     window.toggleSidebar = toggleSidebar;
@@ -27,7 +29,7 @@
           <div class="InputLabel--hidden" aria-hidden="true">
             &quot;phrase to include&quot; some words -&quot;phrase to exclude&quot; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
-  
+
           <input class="Input" type="text" id="articles-filter" name="articles-filter"
             placeholder="&quot;phrase to include&quot; some words -&quot;phrase to exclude&quot;"
             onkeydown="filterArticles(this)">

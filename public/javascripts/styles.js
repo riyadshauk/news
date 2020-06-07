@@ -4,7 +4,7 @@ export const favorite = {
   menu: 'SideNav',
   item: 'item',
   get menuItem() {
-    return componentItem(this.menu, this.item)
+    return componentItem(this.menu, this.item);
   },
 };
 

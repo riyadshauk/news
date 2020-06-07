@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import { apiURLBuilder, test } from '../../public/javascripts/config';
+import { apiURLBuilder, apiURL } from '../../public/javascripts/config';
 
-const newsDashboardURL = test.apiURL;
+const newsDashboardURL = apiURL;
 
 describe('Test the Trending News Master-Detail/List-Modal UI', () => {
   /**
