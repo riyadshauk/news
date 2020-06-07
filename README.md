@@ -73,13 +73,13 @@ Note: If the you notice that the API calls are incorrect, ensure `const testEnv 
 
 ### Step 1: Update public/javascripts/config.js
 
-You will need to change `const testEnv = false;` to `const testEnv = true;` in `public/javascripts/config.js`, and update your public URL from `const publicApiURL = 'https://riyadshauk.com/news';` to whatever your public URL is that is accessible from the statically served files in any browser.
+You will need to change `const testEnv = true;` to `const testEnv = false;` in `public/javascripts/config.js`, and update your public URL from `const publicApiURL = 'https://riyadshauk.com/news';` to whatever your public URL is that is accessible from the statically served files in any browser.
 
 ### Step 2: Serve the website from your webserver of choice
 
 #### Heroku, other PaaS
 
-It should, more or less as usual.
+It should work as usual, more or less.
 
 #### NGINX
 
