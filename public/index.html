@@ -12,11 +12,45 @@
     window.toggleSidebar = toggleSidebar;
   </script>
   <link rel="stylesheet" href="./stylesheets/index.css">
+  <link rel="icon" href="./file.png">
 </head>
 
 <body>
-  <h1 class="Header" id="header">Top News Headlines for the US</h1>
-  <div class="Filters" id="select-country">
+  <input type="checkbox" id="nav-toggle" class="Nav-toggle">
+  <label for="nav-toggle" class="NavToggle-label">
+    <span class="SideBar-btn Header">
+      <svg class="SideBar--show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 16" width="42" height="48">
+        <g>
+          <rect width="28" height="16" fill="none" stroke="#0366d6" stroke-width="1px" />
+          <!-- <path fill="#0366d6" transform="translate(13)" d="M7.5 11.5L9 13l5-5-5-5-1.5 1.5L10.179 7H2v2h8.179L7.5 11.5z"></path> -->
+          <path fill="#0366d6" transform="translate(14)" fill-rule="evenodd"
+            d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"></path>
+          <path fill="#0366d6" transform="translate(19)" fill-rule="evenodd"
+            d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"></path>
+          <path class="FavoriteButtonSVGPath" fill="#0366d6" fill-rule="evenodd"
+            d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
+            transform="translate(1)">
+          </path>
+        </g>
+      </svg>
+
+      <svg class="SideBar--hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 16" width="42" height="48">
+        <g>
+          <rect width="28" height="16" fill="none" stroke="#0366d6" stroke-width="1px" />
+          <path fill="#0366d6" transform="translate(1)" fill-rule="evenodd"
+            d="M5.5 3L7 4.5 3.25 8 7 11.5 5.5 13l-5-5 5-5z"></path>
+          <path fill="#0366d6" transform="translate(6)" fill-rule="evenodd"
+            d="M5.5 3L7 4.5 3.25 8 7 11.5 5.5 13l-5-5 5-5z"></path>
+          <path class="FavoriteButtonSVGPath" fill="#0366d6" fill-rule="evenodd"
+            d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
+            transform="translate(13)">
+          </path>
+        </g>
+      </svg>
+    </span>
+  </label>
+  <div class="Header Filters">
+    <h1 class="Header" id="header">Top News Headlines for the US</h1>
     <div>
       <strong>Select A Country</strong>
       <select class="Dropdown" id="select-country-dropdown">
@@ -26,8 +60,8 @@
       <form>
         <label for="articles-filter">Filter:</label>
         <div class="InputContainer">
-          <div class="InputLabel--hidden" aria-hidden="true">
-            &quot;phrase to include&quot; some words -&quot;phrase to exclude&quot; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="InputLabel--invisible" aria-hidden="true">
+            &quot;phrase to include&quot; some words -&quot;phrase to exclude&quot; &nbsp;&nbsp;&nbsp;&nbsp;
           </div>
 
           <input class="Input" type="text" id="articles-filter" name="articles-filter"
@@ -37,24 +71,21 @@
       </form>
     </div>
   </div>
-  <div class="HamburgerButton" onclick="toggleSidebar(this)">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
   <div class="Main" id="top-headlines">
-    <div id="favorites-section">
+    <div class="SideBar">
       <h2>Favorites</h2>
-      <div class="SideNav border SideBar" id="favorite-articles">
+      <div id="favorites-section">
+        <div class="SideNav border List" id="favorite-articles">
+        </div>
       </div>
     </div>
     <div>
-      <h2>Article Titles</h2>
+      <h2>News Headlines</h2>
       <div class="SideNav border List" id="national-news-titles">
       </div>
     </div>
-    <div>
-      <h2>Article Details</h2>
+    <div class="ArticleDetailContainer --hidden" id="article-detail-container">
+      <h2>Selected Article</h2>
       <article class="Detail border" id="article-detail">
       </article>
     </div>

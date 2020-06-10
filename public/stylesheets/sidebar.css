@@ -1,0 +1,37 @@
+.Nav-toggle:checked ~ .Main > .SideBar {
+  display: block;
+}
+
+.Nav-toggle:checked ~ .NavToggle-label > .SideBar-btn > .SideBar--hide {
+  display: inline-block;
+}
+
+.Nav-toggle:checked ~ .NavToggle-label > .SideBar-btn > .SideBar--show {
+  display: none;
+}
+
+.SideBar--hide {
+  display: none;
+}
+
+.Nav-toggle {
+  display: none;
+}
+
+.SideBar-btn > svg > g > text {
+  font-size: 0.6em;
+}
+
+.SideBar-btn {
+  float: left;
+  padding-left: 1.2em;
+  cursor: pointer;
+}
+
+.SideBar-btn:hover {
+  opacity: 70%;
+}
+
+.SideBar {
+  display: none;
+}

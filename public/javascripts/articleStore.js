@@ -9,4 +9,5 @@ export default new Store({
   countryCode: '',
   filter: '',
   lastRetrievedArticlesURL: '',
+  selectedArticle: {},
 });

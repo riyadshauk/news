@@ -2,7 +2,7 @@
 
 This is a Trending News Dashboard, built with vanilla ES6 (ES7+) javascript, and tested with Jest (for mocking API calls) and Cypress (for end-to-end user experience testing).
 
-![Demo](demo.gif)
+![Demo](demos/demo-v0.0.0-beta.1.gif)
 
 ## How To Set Up, Run, and View Tests (CLI/BASH directions)
 
@@ -94,3 +94,17 @@ location /news {
   try_files $uri $uri/ =404;
 }
 ```
+
+## Changelog
+
+### v0.0.0-beta.1
+
+- Improve overall look and feel (UX), mostly with CSS, some JavaScript.
+- Add SVG button to toggle Favorites visibility (all HTML/CSS).
+- Add corresponding e2e integration tests using Cypress, self-documenting updates.
+
+### v0.0.0-beta.0
+
+- Initial MVP ready.
+
+![v0.0.0-beta.0 Demo](demos/demo-v0.0.0-beta.0.gif)

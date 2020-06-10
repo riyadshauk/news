@@ -17,63 +17,89 @@
  *     https://primer.style/css/tools/linting
  *
  *
- *   Helpful sidebar/sidepanel example from a guy with a thick Indian accent on YouTube : )
- *     https://www.youtube.com/watch?v=uWUNZ4u1VLA
- *
- *   A more modular HTML/CSS-only Hamburger Menu, as overlay, using flexbox:
- *     https://www.youtube.com/watch?v=DZg6UfS5zYg <-- use for modal!?
- *
- *   A last-resort super messy side-menu example:
- *     https://codepen.io/Tyriar/pen/nJGfj
- *
- *
- *   ...I just decided to go with a minimal CSS look, rather than have fancy
- *   slide-out animations with very messy CSS.
+ *   For v0.0.0-beta.1, I'm going with the slide-out panel for Favorites,
+ *   using this video tutorial for high-level guidance:
+ *     https://www.youtube.com/watch?v=wpGNFGqNfdU
  *
  */
 
 /* Primer's recommended way to include their CSS, for static webpages */
 @import url("primer.css");
+@import url("./sidebar.css");
+
+.--hidden {
+  display: none !important;
+}
+
+.Header {
+  height: 5em;
+}
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  float: right;
+  margin-right: 0.5em;
 }
 
 .Filters {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5vh;
+  margin-top: 0.1em;
 }
 
 .Dropdown {
-  height: 2.7em;
+  width: 10em;
+  height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.Input {
+  width: 100%;
+  font-family: Times;
+  font-size: 1em;
+}
+
+.InputContainer {
+  display: inline-block;
+}
+
+.InputLabel--invisible {
+  height: 0;
+  font-family: Times;
+  font-size: 1em;
+  visibility: hidden;
 }
 
 .Main {
   display: flex;
   min-width: 30vw;
   flex-direction: row;
+  justify-content: center;
 }
 
 .List {
   display: flex;
-  min-width: 30vw;
-  height: 65vh;
+  min-width: 25vw;
+  max-width: 50vw;
+  height: 80vh;
   overflow: auto;
   text-align: center;
   flex-direction: column;
 }
 
+.ArticleDetailContainer {
+  display: block;
+}
+
 .Detail {
   min-width: 30vw;
-  height: 65vh;
+  max-width: 65vw;
+  height: 80vh;
   overflow: auto;
 }
 
 .Detail img {
-  max-width: 500px;
+  max-width: 50vw;
 }
 
 .Detail h3 {
@@ -84,53 +110,15 @@ footer {
   cursor: pointer;
 }
 
-.SideBar {
-  min-width: 30vw;
-  height: 65vh;
-  overflow: auto;
-}
-
-.SideBar .--active {
-  display: flex;
-}
-
-/* .HamburgerButton {
-  cursor: pointer;
-} */
-
-/* .HamburgerButton span {
-  display: block;
-  width: 30px;
-  height: 5px;
-  margin: 3px 0;
-  background: #151719;
-} */
-
-.octicon .star .--favorited {
-  fill: blue !important;
-}
-
-.Input {
-  width: 100%;
-  font-family: Times;
-  font-size: 16px;
-}
-
-.InputContainer {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.InputLabel--hidden {
-  height: 0;
-  visibility: hidden;
-}
-
 .FavoriteButton {
   background: none;
   border: 0;
 }
 
-/* .FavoriteButtonSVGPath {
-  fill: blue !important;
-} */
+.FavoriteButtonContainer {
+  float: left;
+}
+
+button[value="Un-favorite"] path {
+  fill: #0366d6;
+}

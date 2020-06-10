@@ -1,0 +1,264 @@
+{
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "YouTube"
+      },
+      "author": null,
+      "title": "Watch GOP senators dodge questions about Trump's tweet - CNN",
+      "description": "CNN's Anderson Cooper calls out a number of Republican senators who dodged questions or were silent when pressed for reaction after President Donald Trump su...",
+      "url": "https://www.youtube.com/watch?v=s5d6UnUwxzo",
+      "urlToImage": "https://i.ytimg.com/vi/s5d6UnUwxzo/maxresdefault.jpg",
+      "publishedAt": "2020-06-10T05:14:17Z",
+      "content": "CNN's Anderson Cooper calls out a number of Republican senators who dodged questions or were silent when pressed for reaction after President Donald Trump suggested without evidence that a 75-year-ol… [+798 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Alex Rogers, CNN",
+      "title": "Primary results: Highlights from a messy election night in Georgia and 4 other states - CNN",
+      "description": "The lines on Election Day in Georgia were so long that state officials announced investigations before the polls even closed, raising fears of what's to come when the nation votes in November.",
+      "url": "https://www.cnn.com/2020/06/10/politics/primary-results-today-highlights/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200609105837-02-voting-lines-atlanta-super-tease.jpg",
+      "publishedAt": "2020-06-10T04:42:55Z",
+      "content": "(CNN)The lines on Election Day in Georgia were so long that state officials announced investigations before the polls even closed, raising fears of what's to come when the nation votes in November.\r\n… [+5994 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "",
+      "title": "IBM Abandons Facial Recognition Products, Condemns Racially Biased Surveillance - NPR",
+      "description": "IBM is the first major technology company to walk away from facial recognition technology amid nationwide protests for racial justice and police reform. Amazon and Microsoft have not followed.",
+      "url": "https://www.npr.org/2020/06/09/873298837/ibm-abandons-facial-recognition-products-condemns-racially-biased-surveillance",
+      "urlToImage": "https://media.npr.org/assets/img/2020/06/09/ap_19287456839427_wide-8aef6472073b160bdb7216880ae663d0748cef40.jpg?s=1400",
+      "publishedAt": "2020-06-10T04:26:44Z",
+      "content": "IBM announced this week that it would stop selling its facial recognition technology to customers including police departments. The move prompted calls for other tech firms, like Amazon and Microsoft… [+5324 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Norimitsu Onishi",
+      "title": "Its Defenses Undone by a Virus, France Seeks Lessons From a Lost War - The New York Times",
+      "description": "A book about France’s defeat in World War II has taken on a curious resonance as the country gazes across the border at Germany and asks why it has weathered the pandemic better.",
+      "url": "https://www.nytimes.com/2020/06/09/world/europe/coronavirus-france-strange-defeat.html",
+      "urlToImage": "https://static01.nyt.com/images/2020/06/08/world/xxVIRUS-France-Strange-Defeat-sub/xxVIRUS-France-Strange-Defeat-sub-facebookJumbo.jpg",
+      "publishedAt": "2020-06-10T04:07:49Z",
+      "content": "We believed our health care system would be an insurmountable rampart against the epidemic, Mr. Fourquet said. But when the attack came, we realized that it wasnt true. We were shocked to learn that … [+858 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "ESPN"
+      },
+      "author": "Jeff Passan",
+      "title": "Sources -- MLBPA proposes 89-game season and expanded playoffs - ESPN",
+      "description": "The MLBPA has made a proposal to MLB for a season of 89 games, with a full prorated share of salary and expanded playoffs, sources told ESPN's Jeff Passan, but MLB sources told ESPN's Karl Ravech the proposal is a nonstarter because of health concerns.",
+      "url": "https://www.espn.com/mlb/story/_/id/29289638/sources-mlbpa-proposes-89-game-season-expanded-playoffs",
+      "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0430%2Fr694410_1296x729_16%2D9.jpg",
+      "publishedAt": "2020-06-10T03:56:15Z",
+      "content": "The Major League Baseball Players Association has made a proposal to MLB for a season of 89 games, with a full prorated share of salary and expanded playoffs, sources familiar with the situation told… [+2050 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "KSL.com"
+      },
+      "author": "https://www.facebook.com/kslcom/",
+      "title": "Shutdowns through early April prevented about 60 million US coronavirus infections, study says - KSL.com",
+      "description": "Overall, the study suggests that emergency COVID-19 policies prevented more than 500 million total coronavirus infections across all six countries.",
+      "url": "https://www.ksl.com/article/46762388/shutdowns-through-early-april-prevented-about-60-million-us-coronavirus-infections-study-says",
+      "urlToImage": "https://img.ksl.com/slc/2785/278563/27856380.jpg?filter=ksl/responsive_story_lg",
+      "publishedAt": "2020-06-10T03:52:51Z",
+      "content": "NEW YORK (CNN) If large-scale shutdown policies such as ordering people to stay home and closing schools were not implemented after the coronavirus pandemic reached the United States, there would be … [+6235 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Alyx Gorman, Josh Taylor",
+      "title": "CrossFit CEO Greg Glassman resigns after offensive George Floyd and coronavirus tweets - The Guardian",
+      "description": "Fitness program lost key partnerships, endorsements and the business of hundreds of affiliated gyms around the world after Glassman tweets",
+      "url": "https://www.theguardian.com/us-news/2020/jun/10/greg-glassman-crossfit-ceo-resigns-george-floyd-protest-coronavirus-tweets-conspiracy-theories",
+      "urlToImage": "https://i.guim.co.uk/img/media/666f17e536d4312078e48986f6e33441ba2cb27f/0_213_4148_2489/master/4148.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f8313e5e7de933863eedea27ed10b7c5",
+      "publishedAt": "2020-06-10T03:50:36Z",
+      "content": "The founder of the US fitness brand CrossFit will step down from his position as CEO following a disastrous few days that have seen the fitness program lose key partnerships, endorsements and the bus… [+5258 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Essentially Sports"
+      },
+      "author": "Reubyn Coutinho",
+      "title": "“No One Will Remember You Guys” – Nate Diaz Hits Out at Kamaru Usman - Essentially Sports",
+      "description": "Welterweight fighter Nate Diaz lashed out at Kamaru Usman and Gilbert Burns ahead of the duo's WWelterweight Title match at Figh Island on July 11.",
+      "url": "https://www.essentiallysports.com/ufc-251-news-no-one-will-remember-you-guys-nate-diaz-hits-out-at-kamaru-usman/",
+      "urlToImage": "https://www.essentiallysports.com/wp-content/uploads/Nate-DIaz-2.jpg",
+      "publishedAt": "2020-06-10T03:05:04Z",
+      "content": "The UFC announced a massive Welterweight Championship clash for Fight Island’s first PPV UFC 251. The event will see Kamaru Usman will defend his title against Gilbert Burns. However, this has rubbed… [+2242 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Joshua Berlinger, CNN Business",
+      "title": "North Korea might be making millions -- and breaking sanctions -- selling sand. Yes, sand. - CNN",
+      "description": "North Korea is barred from exporting earth and stone under United Nations sanctions passed in December 2017. Trading North Korean sand is a violation of international law.",
+      "url": "https://www.cnn.com/2020/06/09/business/north-korea-sand-intl-hnk/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200526232210-01-haeju-satellite-imagery-super-tease.jpg",
+      "publishedAt": "2020-06-10T02:34:05Z",
+      "content": "Hong Kong (CNN Business)It was May of last year when Lucas Kuo and Lauren Sung noticed something strange: more than 100 ships gathering in the waters near Haeju, North Korea. \r\nAs part of their work … [+8395 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Julius Young",
+      "title": "Anna Kendrick compares filming first 'Twilight' to surviving a 'hostage situation': 'You're… bonded for life' - Fox News",
+      "description": "The weather in Portland, Ore., where the first film was shot, wasn’t so great, with Kendrick remembering she was “so cold and miserable.”",
+      "url": "https://www.foxnews.com/entertainment/anna-kendrick-twilight-compares-filming-to-hostage-situation",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/12/GettyImages-895065312.jpg",
+      "publishedAt": "2020-06-10T02:18:18Z",
+      "content": "The “Twilight” film franchise might have catapulted the careers of many of its stars and supporting performers, but series alum Anna Kendrick is opening up about her time as a cast member in the popu… [+2103 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Jeff Zeleny and Caroline Kenny, CNN",
+      "title": "A world away from Washington, loyal supporters stand by the President in Trump country - CNN",
+      "description": "Some of President Donald Trump's loyal supporters are becoming well-practiced in the art of forgiveness, saying they are drawn to his record and willing to overlook his rhetoric.",
+      "url": "https://www.cnn.com/2020/06/09/politics/trump-supporters-florida/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/160806102642-donald-trump-jacksonville-august-3-2016-super-tease.jpg",
+      "publishedAt": "2020-06-10T01:42:57Z",
+      "content": "Jacksonville, Florida (CNN)Some of President Donald Trump's loyal supporters are becoming well-practiced in the art of forgiveness, saying they are drawn to his record and willing to overlook his rhe… [+6964 chars]"
+    },
+    {
+      "source": {
+        "id": "financial-times",
+        "name": "Financial Times"
+      },
+      "author": "James Politi",
+      "title": "Six things to watch at the Federal Reserve meeting - Financial Times",
+      "description": "News, analysis and comment from the Financial Times, the worldʼs leading global business publication",
+      "url": "https://www.ft.com/content/c44f65bc-fa31-4d72-a102-8bb13604e1b1",
+      "urlToImage": null,
+      "publishedAt": "2020-06-10T00:12:07Z",
+      "content": "Keep abreast of significant corporate, financial and political developments around the world.\r\nStay informed and spot emerging risks and opportunities with independent global reporting, expert\r\ncomme… [+32 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Michelle Nichols",
+      "title": "Russia, China build case at U.N. to protect Iran from U.S. sanctions threat - Reuters",
+      "description": "Russia and China have started making the case at the United Nations against Washington's claim that it can trigger a return of all sanctions on Iran at the Security Council, with Moscow invoking a 50-year-old international legal opinion to argue against the m…",
+      "url": "https://www.reuters.com/article/us-usa-iran-russia-china-idUSKBN23G2YR",
+      "urlToImage": "https://s2.reutersmedia.net/resources/r/?m=02&d=20200609&t=2&i=1521698398&w=1200&r=LYNXMPEG581WI",
+      "publishedAt": "2020-06-10T00:04:24Z",
+      "content": "NEW YORK (Reuters) - Russia and China have started making the case at the United Nations against Washington’s claim that it can trigger a return of all sanctions on Iran at the Security Council, with… [+2454 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "YouTube"
+      },
+      "author": null,
+      "title": "Coronavirus Updates: One Blood Type May Protect Against Virus; Covid-19 Is Fauci's 'Worst Nightmare' - Bloomberg QuickTake News",
+      "description": "A top World Health Organization expert has tried to clear up \"misunderstandings\" about comments she made that were widely understood to suggest that people w...",
+      "url": "https://www.youtube.com/watch?v=HIi9dv0KfIM",
+      "urlToImage": "https://i.ytimg.com/vi/HIi9dv0KfIM/maxresdefault_live.jpg",
+      "publishedAt": "2020-06-10T00:02:18Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Los Angeles Times"
+      },
+      "author": "Jessica Roy",
+      "title": "All Black Lives Matter march set for June 14 - Los Angeles Times",
+      "description": "There will be a Black Lives Matter march in L.A. on June 14. But Christopher Street West, the organization that produces L.A. Pride, will not be involved.",
+      "url": "https://www.latimes.com/california/story/2020-06-09/all-black-lives-matter-march-june-14-without-la-pride",
+      "urlToImage": "https://ca-times.brightspotcdn.com/dims4/default/0edc20f/2147483647/strip/true/crop/6720x3528+0+476/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F98%2Fb6%2F027a94024e6ea7c2c16f854f4391%2Fla-photos-1staff-553277-me-0608-george-floyd-memorial-gem-011.jpg",
+      "publishedAt": "2020-06-10T00:01:17Z",
+      "content": "There will still be a march in support of Black Lives Matter in L.A. on June 14. But Christopher Street West, the organization that produces L.A. Pride, will not be involved.\r\nAfter announcing a soli… [+2374 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Victor Garcia",
+      "title": "Barr claims social media platforms 'censoring particular viewpoints and putting their own content in there' - Fox News",
+      "description": "Attorney General William Barr told \"Special Report\" in the second part of an exclusive interview that aired Tuesday that he believes social media platforms are \"engaged in censorship\" and are acting more like \"publishers\".",
+      "url": "https://www.foxnews.com/media/barr-claims-social-media-platforms-censoring-viewpoints",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2020/06/image-13-1.jpg",
+      "publishedAt": "2020-06-09T23:44:06Z",
+      "content": "Attorney General William Barr told \"Special Report\" in the second part of an exclusive interview that aired Tuesday that he believes social media platforms are \"engaged in censorship\" and are acting … [+2095 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Matt Schudel",
+      "title": "Pierre Nkurunziza, Burundian president who led authoritarian regime, dies at 55 - The Washington Post",
+      "description": "After becoming the African country’s president in 2005, he tightened his hold on power.",
+      "url": "https://www.washingtonpost.com/local/obituaries/pierre-nkurunziza-burundi-president-who-led-authoritarian-regime-dies-at-55/2020/06/09/f1a582e4-aa60-11ea-a9d9-a81c1a491c52_story.html",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LFOO3LQLEQI6NJVWFZW6G2K3BY.jpg&w=1440",
+      "publishedAt": "2020-06-09T23:39:43Z",
+      "content": "The governments official statement described the cause of death as a heart attack, after he was taken ill recently. There was widespread speculation that he may have had covid-19, the disease caused … [+6426 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline"
+      },
+      "author": "Dade Hayes",
+      "title": "‘Tenet’: New York Will Be “Right On The Cusp Of Reopening” By July 17 But City Release Outlook Uncertain, AMC CEO Says - Deadline",
+      "description": "AMC Entertainment CEO Adam Aron believes New York City’s arduous recovery from COVID-19 leaves an uncertain outlook for theaters there being ready to play Warner Bros.’ Tenet when it opens July 17. The global footprint of AMC locations is aiming to welcome th…",
+      "url": "https://deadline.com/2020/06/tenet-new-york-will-be-right-on-the-cusp-of-reopening-by-july-17-but-city-release-outlook-uncertain-amc-ceo-says-1202954919/",
+      "urlToImage": "https://pmcdeadline2.files.wordpress.com/2020/06/amc-lincoln-square.jpg?w=1024",
+      "publishedAt": "2020-06-09T23:33:38Z",
+      "content": "AMC Entertainment CEO Adam Aron believes New York City’s arduous recovery from COVID-19 leaves an uncertain outlook for theaters there being ready to play Warner Bros.’ Tenet when it opens July 17.\r\n… [+2562 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MarketWatch"
+      },
+      "author": "Mark DeCambre",
+      "title": "Dow futures climb ahead of Fed update after blue-chip index snaps 6-day win streak, while Nasdaq marks fresh record - MarketWatch",
+      "description": "",
+      "url": "http://www.marketwatch.com/story/dow-futures-climb-ahead-of-fed-update-after-blue-chip-index-snaps-6-day-win-streak-while-nasdaq-marks-fresh-record-2020-06-09",
+      "urlToImage": "https://s.wsj.net/public/resources/MWimages/MW-GP644_MicroS_ZG_20180906154215.jpg",
+      "publishedAt": "2020-06-09T23:33:00Z",
+      "content": "U.S. stock-index futures Tuesday evening were trading slightly higher ahead of a key policy update from the Federal Reserve on Wednesday. Moves for futures come after the Dow Jones Industrial Average… [+2084 chars]"
+    },
+    {
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Janelle Griffith",
+      "title": "At George Floyd funeral, Al Sharpton demands Roger Goodell 'give Colin Kaepernick a job' - NBC News",
+      "description": "Al Sharpton admonished NFL commissioner Roger Goodell at George Floyd's funeral Tuesday, stating he should allow Colin Kaepernick to return to the league.",
+      "url": "https://www.nbcnews.com/news/us-news/george-floyd-funeral-al-sharpton-demands-roger-goodell-give-colin-n1228801",
+      "urlToImage": "https://media4.s-nbcnews.com/j/newscms/2020_24/2736166/190131-roger-goodell-al-0827_8d152721fd9cf7b2ddffd6de5e026ebc.nbcnews-fp-1200-630.jpg",
+      "publishedAt": "2020-06-09T23:11:58Z",
+      "content": "Al Sharpton admonished NFL commissioner Roger Goodell at George Floyd's funeral on Tuesday, stating he should allow Colin Kaepernick to return to the league.\r\n\"Oh, it's nice to see some people change… [+3393 chars]"
+    }
+  ]
+}

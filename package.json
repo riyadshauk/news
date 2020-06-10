@@ -5,7 +5,7 @@
     "start": "node ./bin/www",
     "test": "npm run test:api && npm run test:e2e",
     "test:api": "npx jest public/javascripts-node/javascripts/index.test.js",
-    "test:e2e": "npx cypress run -s cypress/integration/news_dashboard.spec.js",
+    "test:e2e": "npx cypress run -s cypress/integration/news_dashboard.spec.js --browser chrome",
     "test:e2e:interactive": "cypress open",
     "postinstall": "cp git-hooks/* ./.git/hooks/",
     "build": "npm run build:deps && npm run build:node && npm run build:web",

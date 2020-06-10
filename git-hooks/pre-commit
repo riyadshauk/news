@@ -2,4 +2,5 @@
 if [[ -z "${SKIP_LINT}" ]]; then # SKIP_LINT is undefined
 	npm run eslint
 fi
+npm run build # make sure we test the latest source-code
 npm test

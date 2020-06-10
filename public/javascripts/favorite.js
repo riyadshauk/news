@@ -67,7 +67,7 @@ export const createFavoriteButton = (article) => {
   // favoriteButton.setAttribute('style', "padding: 0; border: none; background: none; fill:blue;")
   favoriteButton.onclick = (e) => {
     e.preventDefault();
-    favoriteButton.querySelector('svg').classList.toggle('--favorited');
+    favoriteButton.classList.toggle('--favorited');
     if (favoriteButton.value === 'Favorite') {
       addFavoriteArticle(article);
     } else {

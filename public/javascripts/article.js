@@ -1,6 +1,9 @@
 import { createFavoriteButton } from './favorite.js';
+import store from './articleStore.js';
 
-const populateArticleDetail = (article) => {
+const { setState, state } = store;
+
+const populateArticleDetail = () => {
   const {
     title,
     description,
@@ -9,7 +12,7 @@ const populateArticleDetail = (article) => {
     publishedAt,
     content,
     source,
-  } = article;
+  } = state.selectedArticle;
   const articleDetailSection = document.getElementById('article-detail');
   articleDetailSection.innerHTML = `
   <h3>
@@ -36,9 +39,20 @@ const populateArticleDetail = (article) => {
 
 const createNewsTitleElement = (article) => {
   const { title } = article;
-  const newsTitleElement = document.createElement('h3');
+  const newsTitleElement = document.createElement('h5');
   newsTitleElement.textContent = title;
-  newsTitleElement.onclick = () => populateArticleDetail(article);
+  newsTitleElement.onclick = () => {
+    const articleDetailSectionContainer = document
+      .getElementById('article-detail-container');
+    if (state.selectedArticle === article) {
+      setState({ selectedArticle: {} });
+      articleDetailSectionContainer.classList.add('--hidden');
+    } else {
+      setState({ selectedArticle: article });
+      articleDetailSectionContainer.classList.remove('--hidden');
+      populateArticleDetail();
+    }
+  };
   return newsTitleElement;
 };
 
@@ -46,7 +60,7 @@ const displayArticlesError = () => {
   const errorDiv = document.createElement('div');
   errorDiv.className = 'Articles--error';
   // eslint-disable-next-line max-len
-  errorDiv.innerHTML = '<h3>Unfortunately, there are no news articles associated with your selection.</h3>';
+  errorDiv.innerHTML = '<h5>Unfortunately, there are no news articles associated with your selection.</h5>';
   return errorDiv;
 };
 
@@ -71,6 +85,7 @@ const createTitleContainer = (article, className = '') => {
 
   const favoriteButtonContainer = document.createElement('div');
   favoriteButtonContainer.appendChild(createFavoriteButton(article));
+  favoriteButtonContainer.classList.add('FavoriteButtonContainer');
   titleContainer.appendChild(favoriteButtonContainer);
 
   const titleElement = createNewsTitleElement(article);
