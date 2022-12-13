@@ -15,7 +15,7 @@
     "eslint": "npx eslint ."
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "search-text-tokenizer": "2.1.1"
   },
   "devDependencies": {
